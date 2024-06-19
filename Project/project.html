@@ -15,61 +15,39 @@
     <!-- 자바스크립트, css 연결 -->
     <script href="project.jss" defer></script>
     <link href="project.css" rel="stylesheet">
+    <!-- 반응형 설정 -->
+    <link rel="stylesheet" href="project.css" media="screen and (max-width: 1000px)">
 </head>
 
 <body>
     <!-- 상단 메뉴바(고정) -->
-    <header class="header">
+    <header class="header fixed-top">
         <!-- 헤더 로고 -->
         <div class="header_logo">
             <!-- 로고 이미지 및 타이틀 -->
-            <img class="header_logo_img" src="../img/라이언(원형).png" alt="Logo">
-            <h1 class="header_logo_title"><a class="link_underline" href="#">BS Project</a></h1>
+            <h1 class="header_logo_title">
+                <img class="header_logo_img" src="./img/라이언(원형).png" alt="Logo">
+                <a class="header_logo_name link_underline" href="#">BS Project</a>
+            </h1>
         </div>
-        <!-- 네이게이션바 메뉴 -->
-        <nav class="header_nav">
-            <!-- 메뉴 리스트 -->
-            <ul class="header_menu">
-                <!-- 메뉴 누르면 해당 페이지로 연결하는 링크 -->
-                 <!-- (아직 페이지 만들지 않아 본 페이지 이동 링크 설정) -->
-                <li><a class="header_menu_item link_menu_underline" href="#"><i class="fa-solid fa-magnifying-glass"></i>검색</a></li>
-                <li><a class="header_menu_item link_menu_underline" href="#"><i class="fa-solid fa-heart" style="color: #fa0000;"></i>찜</a></li>
-                <li><a class="header_menu_item link_menu_underline" href="#"><i class="fa-solid fa-user" style="color: #74C0FC;"></i>마이페이지</a></li>
-            </ul>
-        </nav>
 
-        <!-- 캐러셀 예시 20240617-->
-        <!-- <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/product1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/product2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/product3.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div> -->
+        <!-- 메뉴 리스트 -->
+        <ul class="header_menu">
+            <!-- 메뉴 누르면 해당 페이지로 연결하는 링크 
+            (아직 페이지 만들지 않아 본 페이지 이동 링크 설정) -->
+            <li><a class="header_menu_item link_menu_underline" href="#">
+                    <i class="fa-solid fa-magnifying-glass" style="color:black"></i>검색</a></li>
+            <li><a class="header_menu_item link_menu_underline" href="#">
+                    <i class="fa-solid fa-heart" style="color: #fa0000;"></i>찜</a></li>
+            <li><a class="header_menu_item link_menu_underline" href="#">
+                    <i class="fa-solid fa-user" style="color: #657481;"></i>마이페이지</a></li>
+        </ul>
+
+        <!-- 토글 버튼 -->
+        <a href="#" class="header_togleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+
     </header>
 
     <!-- 부트 스트랩 -->
