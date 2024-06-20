@@ -71,9 +71,7 @@ body {
     .header {
         flex-direction: column;
         align-items: flex-start;
-        position: relative;
         height: 60px;
-        width: 100vw;
     }
 
     .header_logo_title {
@@ -97,13 +95,10 @@ body {
         align-items: center;
         width: 100vw;
         background-color: lightskyblue;
-        
-        /* padding: 1%;
-        margin: 0;
-        list-style: none;
-        justify-content: space-around;
-        align-items: center;
-        gap: 5%; */
+        position: fixed;
+        top: 60px;
+        left: 0px;
+        border-top: 1px solid rgb(169, 217, 247);
     }
 
     .header_menu li {
@@ -121,4 +116,16 @@ body {
     .header_menu.active {
         display: flex;
     }
+}
+
+.main_imgSlide {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75vw;
+    height: 80vh;
+}
+
+.main_imgSlide_img {
+    width: 75vw;
+    height: 80vh;
 }
