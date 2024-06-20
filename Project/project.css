@@ -129,3 +129,27 @@ body {
     width: 75vw;
     height: 80vh;
 }
+
+/* 날씨 css */
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .weather-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightskyblue;
+    border-radius: 8px;
+    padding: 14px;
+  }
+  
+  .weather-inner > div {
+    margin-bottom: 7px;
+  }
+
