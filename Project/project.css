@@ -141,7 +141,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 30%;
+    margin-top: 50px;
+    padding: 1%;
   }
   
   .weather-inner {
@@ -158,7 +160,7 @@ body {
     margin-bottom: 7px;
   }
 
-/* 날씨별 장소 img */
+/* 날씨별 추천 장소 img */
 .main_weather_img {
-    
+    padding: 1%;
 }
