@@ -136,6 +136,12 @@ body {
     height: 80vh;
 }
 
+.main_font {
+    color: chocolate;
+    font-weight: bold;
+    font-size: 35px;
+}
+
 /* 날씨 div */
 .main_weather {
     display: flex;
