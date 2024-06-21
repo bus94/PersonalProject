@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/550daf9ecc.js" crossorigin="anonymous"></script>
     <!-- 제이쿼리 링크 -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>ㄹ
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <!-- 자바스크립트, css 연결 -->
     <script src="project.js" defer></script>
@@ -52,56 +52,65 @@
 
     </header>
 
+    <div class="container">
+        <!-- 메인 캐러셀 -->
+        <div id="carouselExampleAutoplaying" class="carousel slide main_imgSlide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/메인/주문진해수욕장.jpg" class="d-block w-100 main_imgSlide_img" alt="...">
+                    <p>주문진해수욕장</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/메인/평창육백마지기.jpg" class="d-block w-100 main_imgSlide_img" alt="...">
+                    <p>평창육백마지기</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/메인/광명동굴.jpg" class="d-block w-100 main_imgSlide_img" alt="...">
+                    <p>광명동굴</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">이전</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">다음</span>
+            </button>
+        </div>
 
-    <!-- 메인 캐러셀 -->
-    <div id="carouselExampleAutoplaying" class="carousel slide main_imgSlide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./img/주문진해수욕장.jpg" class="d-block w-100 main_imgSlide_img" alt="...">
-                <p>주문진해수욕장</p>
+        <!-- 날씨 div -->
+        <div class="main_weather">
+            <div class="weather-container">
+                <div class="weather-inner">
+                    <div class="searchBar">
+                        <input type="text" id="cityName" placeholder="도시 이름을 입력하세요">
+                        <button onclick="search()">검색</button>
+                        <p style="color: rgb(175, 30, 30); font-size: 14px;">ex) 서울 - 서울특별시, 남양주 - 남양주시 등</p>
+                    </div>
+                    <div id="area"></div>
+                    <div id="description"></div>
+                    <div id="clouds"></div>
+                    <div id="wind"></div>
+                    <div weatherData id="feels_like"></div>
+                    <div weatherData id="humidity"></div>
+                    <div weatherData id="pressure"></div>
+                    <div weatherData id="temp"></div>
+                    <div weatherData id="temp_max"></div>
+                    <div weatherData id="temp_min"></div>
+                    <div><img id="weatherIcon" alt="현재 날씨 아이콘"></div>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="./img/평창육백마지기.jpg" class="d-block w-100 main_imgSlide_img" alt="...">
-                <p>평창육백마지기</p>
-            </div>
-            <div class="carousel-item">
-                <img src="./img/광명동굴.jpg" class="d-block w-100 main_imgSlide_img" alt="...">
-                <p>광명동굴</p>
+
+            <!-- 날씨별 장소 -->
+            <div class="main_weather_img">
+                
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">이전</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">다음</span>
-        </button>
-    </div>
 
-    <!-- 날씨 div -->
-    <div class="weather-container">
-        <div class="weather-inner">
-            <div class="searchBar">
-                <input type="text" id="cityName" placeholder="도시 이름을 입력하세요">
-                <button onclick="search()">검색</button>
-            </div>
-            <div id="area"></div>
-            <div id="description"></div>
-            <div id="clouds"></div>
-            <div id="wind"></div>
-            <div weatherData id="feels_like"></div>
-            <div weatherData id="humidity"></div>
-            <div weatherData id="pressure"></div>
-            <div weatherData id="temp"></div>
-            <div weatherData id="temp_max"></div>
-            <div weatherData id="temp_min"></div>
-            <div><img id="weatherIcon" alt="현재 날씨 아이콘"></div>
-        </div>
     </div>
-
     <!-- 부트 스트랩 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
