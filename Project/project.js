@@ -75,13 +75,6 @@ input.addEventListener('keydown', function (event) {
   }
 });
 
-
-
-
-
-
-
-
 // Openweathermap
 // api 키: feffcb3a3f3c872ae7ddb0fa1d617371
 // 사용방법 출처: https://velog.io/@imfruin95/JavaScript-API-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-%EB%82%A0%EC%94%A8-%EC%A0%95%EB%B3%B4-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0
