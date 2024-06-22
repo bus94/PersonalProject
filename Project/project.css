@@ -8,7 +8,7 @@ body {
     font-weight: bold;
     font-size: 20px;
 }
-  
+
 .container {
     position: relative;
     top: 65px;
@@ -128,6 +128,7 @@ body {
     }
 }
 
+/* 메인 컨테이너 관련 내용 */
 .main_imgSlide {
     margin-left: auto;
     margin-right: auto;
@@ -148,9 +149,43 @@ body {
     font-size: 35px;
 }
 
+/* indicator 수정 */
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: lightblue;
+    background-clip: padding-box;
+    border: 0;
+    opacity: .8;
+    transition: opacity .6s ease;
+    align-items: center;
+}
+
+.carousel-indicators .active {
+    width: 60px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #35c5f0;
+    align-items: center;
+}
+
 /* 날씨 div */
 .main_weather {
     display: flex;
+    padding: 5px;
+    width: 100%;
+    height: 670px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 /* 날씨 css */
@@ -160,11 +195,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 30%;
-    margin-top: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
     padding: 1%;
-  }
-  
-  .weather-inner {
+}
+
+.weather-inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,14 +208,26 @@ body {
     background-color: lightskyblue;
     border-radius: 8px;
     padding: 14px;
-  }
-  
-  .weather-inner > div {
-    margin-bottom: 7px;
-  }
+}
+
+.weather-inner>div {
+    margin-bottom: 5px;
+}
 
 /* 날씨별 추천 장소 img */
 .main_weather_img {
-    padding: 1%;
-    
+    width: 100%;
+    height: 615px;
+}
+
+.weather_img_size {
+    width: 100%;
+    height: 600px;
+    border-radius: 5px;
+}
+
+/* indicator 위치 */
+.indicator1 {
+    position: absolute;
+    top: 610px;
 }
