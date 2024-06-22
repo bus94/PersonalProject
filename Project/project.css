@@ -156,6 +156,18 @@ body {
 }
 
 /* 메인 컨테이너 관련 내용 */
+.main_img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.main_img_size {
+    border-radius: 5px;
+    width: 100vw;
+    height: 400px;
+}
+
 .main_container {
     margin-left: auto;
     margin-right: auto;
@@ -193,15 +205,15 @@ body {
 .carousel-indicators [data-bs-target] {
     box-sizing: content-box;
     flex: 0 1 auto;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 100%;
     padding: 0;
     margin-right: 3px;
     margin-left: 3px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: lightblue;
+    background-color: gray;
     background-clip: padding-box;
     border: 0;
     opacity: .8;
@@ -210,10 +222,10 @@ body {
 }
 
 .carousel-indicators .active {
-    width: 60px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 5px;
-    background-color: #35c5f0;
+    background-color: black;
     align-items: center;
 }
 
@@ -236,7 +248,7 @@ body {
 /* "검색" 버튼 */
 .cityNameBtn {
     border-radius: 5px;
-    background: #c6e9f4;
+    background: white;
 }
 
 /* 날씨 css */
@@ -256,7 +268,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: lightskyblue;
+    background-color: lightgrey;
     border-radius: 8px;
     padding: 14px;
     height: 360px;
