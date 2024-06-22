@@ -32,8 +32,8 @@ async function getWeather(url) {
   await fetch(url)
     .then((response) => response.json()) // 가져온 데이터를 json 형태로 변환 
     .then((data) => {
-      const weahterMain = data.main;
-      const stateData = Object.values(weahterMain);
+      const weatherMain = data.main;
+      const stateData = Object.values(weatherMain);
       weatherData.forEach((item, idx) => {
         item.innerHTML = `${stateName[idx]}: ${stateData[idx]}`;
       });
@@ -49,7 +49,7 @@ async function getWeather(url) {
     });
 }
 
-// 사용자가 검색한 도시를 추가하기 위함
+// 사용자가 검색한 도시을 추가하기 위
 function getWeatherUrl(city, key = API_KEY) {
 // 끝에 &lang=kr를 사용하여 응답받은 데이터 일부 번역
   return `${BASE_URL}?q=${city}&appid=${key}&units=metric&lang=kr`;
@@ -83,9 +83,9 @@ input.addEventListener('keydown', function (event) {
 // 1) clear sky: 맑음
 // 2) few clouds: 구름 조금
 // 3) scattered clouds: 
-// 4) broken clouds: 튼구름
+// 4) broken clouds: 온흐림, 튼구름
 // 9) shower rain: 소나기
-// 10) rain: 비
+// 10) rain: (비) 실 비, 보통 비
 // 11) thunderstorm: 번개
 // 13) snow: 눈
 // 50) mist: 안개

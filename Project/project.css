@@ -1,12 +1,9 @@
 body {
     padding: 0;
     margin: 0;
-    /* font-family: 'Segoe Script'; */
-    font-family: "Gaegu", sans-serif;
+    font-family: "IBM Plex Sans KR", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
 }
 
 .container {
@@ -19,10 +16,14 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    background: lightskyblue;
+    background: white;
     align-items: center;
     padding: 5px 20px;
     height: 60px;
+}
+
+.header_color {
+    color: gray;
 }
 
 /* 로고 타이틀(이미지 및 이름) */
@@ -34,20 +35,26 @@ body {
 
 /* 로고 이미지 */
 .header_logo_img {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
 }
 
-.header_menu {
+.header_menu_left, .header_menu_right {
     list-style: none;
-    display: flex;
     padding: 1%;
     width: 50%;
     margin: 0;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 25px;
-    gap: 5%;
+    font-size: 18px;
+    gap: 50px;
+    display: flex;
+}
+
+.header_menu_right {
+    right: 0;
+}
+
+.header_menu_li {
+    width: 250px;
 }
 
 /* x
@@ -99,7 +106,7 @@ body {
         height: 70px;
     }
 
-    .header_menu {
+    .header_menu_left {
         display: none;
         padding: 0;
         margin: 0;
@@ -113,7 +120,21 @@ body {
         border-top: 1px solid rgb(169, 217, 247);
     }
 
-    .header_menu li {
+    .header_menu_right {
+        display: none;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        background-color: lightskyblue;
+        position: fixed;
+        top: 60px;
+        left: 0px;
+        border-top: 1px solid rgb(169, 217, 247);
+    }
+
+    .header_menu_li {
         width: 100%;
         text-align: center;
     }
@@ -125,7 +146,11 @@ body {
         right: 20px;
     }
 
-    .header_menu.active {
+    .header_menu_left.active {
+        display: flex;
+    }
+
+    .header_menu_right.active {
         display: flex;
     }
 }
@@ -152,7 +177,6 @@ body {
     width: 100%;
     height: 63vh;
     border-radius: 8px;
-    border: 3px solid lightblue;
 }
 
 .img_size {
@@ -160,9 +184,9 @@ body {
 }
 
 .main_font {
-    color: chocolate;
+    color: gray;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 /* indicator 수정 */
@@ -196,12 +220,23 @@ body {
 /* 날씨 div */
 .main_weather {
     display: flex;
-    padding: 5px;
+    padding: 10px;
     width: 100%;
     height: 400px;
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+/* "도시 이름을 입력하세요" 텍스트 */
+#cityName {
+    border-radius: 5px;
+}
+
+/* "검색" 버튼 */
+.cityNameBtn {
+    border-radius: 5px;
+    background: #c6e9f4;
 }
 
 /* 날씨 css */

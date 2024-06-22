@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -14,9 +14,14 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!-- 구글 폰트 -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Noto+Serif+KR:wght@200..900&display=swap"
+        rel="stylesheet">
 
     <!-- 자바스크립트, css 연결 -->
     <script src="project.js" defer></script>
@@ -28,25 +33,29 @@
 <body>
     <!-- 상단 메뉴바(고정) -->
     <header class="header fixed-top">
+        <!-- Main left 
+         (아직 페이지 만들지 않아 본 페이지 이동 링크 설정) -->
+        <ul class="header_menu_li header_menu_left">
+            <li><a class="header_menu_item link_menu_underline header_color" href="#">
+                <i class="fa-solid fa-magnifying-glass" style="color:black"></i> Search</a></li>
+        </ul>
         <!-- 헤더 로고 -->
         <div class="header_logo">
             <!-- 로고 이미지 및 타이틀 -->
             <h1 class="header_logo_title">
-                <img class="header_logo_img" src="./img/라이언(원형).png" alt="Logo">
-                <a class="header_logo_name link_underline" href="#">BS Project</a>
+                <img class="header_logo_img" src="./img/네잎클로버.PNG" alt="Logo">
+                <a class="header_logo_name link_underline header_color" href="#">Where Today</a>
             </h1>
-        </div>
+        </div> 
 
         <!-- 메뉴 리스트 -->
-        <ul class="header_menu">
+        <ul class="header_menu_li header_menu_right">
             <!-- 메뉴 누르면 해당 페이지로 연결하는 링크 
             (아직 페이지 만들지 않아 본 페이지 이동 링크 설정) -->
-            <li><a class="header_menu_item link_menu_underline" href="#">
-                    <i class="fa-solid fa-magnifying-glass" style="color:black"></i>검색</a></li>
-            <li><a class="header_menu_item link_menu_underline" href="#">
-                    <i class="fa-solid fa-heart" style="color: #fa0000;"></i>찜</a></li>
-            <li><a class="header_menu_item link_menu_underline" href="#">
-                    <i class="fa-solid fa-user" style="color: #657481;"></i>마이페이지</a></li>
+            <li><a class="header_menu_item link_menu_underline header_color" href="#">
+                    <i class="fa-solid fa-heart" style="color: black;"></i> Wish</a></li>
+            <li><a class="header_menu_item link_menu_underline header_color" href="#">
+                    <i class="fa-solid fa-user" style="color: black;"></i> Login</a></li>
         </ul>
 
         <!-- 토글 버튼 -->
@@ -69,7 +78,7 @@
                         aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active img_size" data-bs-interval="4000"> 
+                    <div class="carousel-item active img_size" data-bs-interval="4000">
                         <img src="./img/메인/주문진해수욕장.jpg" class="d-block w-100 main_imgSlide_img" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                         </div>
@@ -109,32 +118,6 @@
                 </button>
             </div>
         </div>
-        <!-- <div id="carouselExampleAutoplaying" class="carousel slide main_imgSlide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/메인/주문진해수욕장.jpg" class="d-block w-100 main_imgSlide_img" alt="...">
-                    <p>주문진해수욕장</p>
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/메인/평창육백마지기.jpg" class="d-block w-100 main_imgSlide_img" alt="...">
-                    <p>평창육백마지기</p>
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/메인/광명동굴.jpg" class="d-block w-100 main_imgSlide_img" alt="...">
-                    <p>광명동굴</p>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">이전</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">다음</span>
-            </button>
-        </div> -->
 
         <!-- 날씨 div -->
         <div class="main_weather">
@@ -142,7 +125,7 @@
                 <div class="weather-inner">
                     <div class="searchBar">
                         <input type="text" id="cityName" placeholder="도시 이름을 입력하세요">
-                        <button onclick="search()">검색</button>
+                        <button onclick="search()" class="cityNameBtn">검색</button>
                         <p style="color: rgb(175, 30, 30); font-size: 14px;">ex) 서울 - 서울특별시, 남양주 - 남양주시 등</p>
                     </div>
                     <div id="area"></div>
