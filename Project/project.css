@@ -35,7 +35,8 @@ body {
 }
 
 .search_design:hover {
-    background: beige;
+    background: lightgray;
+    font-weight: bold;
     border: 2px solid lightgray;
 }
 
@@ -100,10 +101,19 @@ body {
     text-decoration-line: none;
 }
 
+.link_menu_underline1 {
+    text-decoration-line: none;
+}
+
 /* hover 밑줄 나타내기 */
 .link_menu_underline:hover {
     font-weight: bold;
     text-decoration-line: underline;
+}
+
+.link_menu_underline1:hover {
+    font-weight: bold;
+    text-decoration-line: none;
 }
 
 /* 반응형 설정 */
@@ -231,8 +241,7 @@ body {
 
 .main_font_here {
     color: black;
-    font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .main_font {
