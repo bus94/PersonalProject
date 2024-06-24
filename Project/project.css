@@ -23,8 +23,20 @@ ul {
     justify-content: space-around;
     background: white;
     align-items: center;
-    padding: 5px 20px;
+    padding: 0 20px;
     height: 60px;
+}
+
+.header_col1 {
+    text-align: left;
+}
+
+.header_col2 {
+    text-align: center;
+}
+
+.header_col3 {
+    text-align: right;
 }
 
 .header_color {
@@ -67,7 +79,7 @@ ul {
 .header_menu_right {
     list-style: none;
     padding: 1%;
-    width: 50%;
+    width: 100%;
     margin: 0;
     font-size: 18px;
     gap: 50px;
@@ -76,13 +88,11 @@ ul {
 
 .header_menu_right {
     justify-content: flex-end;
-    position: relative;
-    right: 0;
 }
 
-.header_menu_li {
+/* .header_menu_li {
     width: 250px;
-}
+} */
 
 /* x
 .header_menu_item {

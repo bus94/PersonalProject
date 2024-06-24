@@ -32,39 +32,47 @@
 
 <body>
     <!-- 상단 메뉴바(고정) -->
-    <header class="header fixed-top">
+    <header class="row header fixed-top">
         <!-- Main left 
          (아직 페이지 만들지 않아 본 페이지 이동 링크 설정) -->
-        <ul class="header_menu_li header_menu_left">
-            <!-- <li><a class="header_menu_item link_menu_underline header_color" href="#">
+        <div class="col header_col1">
+            <ul class="header_menu_li header_menu_left">
+                <!-- <li><a class="header_menu_item link_menu_underline header_color" href="#">
                     <i class="fa-solid fa-magnifying-glass" style="color:black"></i> Search</a></li> -->
-            <form class="d-flex" role="search">
-                <input class="form-control me-2 search_text" type="search" placeholder="검색어를 입력하세요" aria-label="Search">
-                <button class="btn search_design">
-                    <li><a class="header_menu_item link_menu_underline1 header_color search_a" href="#">
-                            <i class="fa-solid fa-magnifying-glass" style="color:black"></i> Search</a>
-                    </li>
-                </button>
-            </form>
-        </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 search_text" type="search" placeholder="검색어를 입력하세요"
+                        aria-label="Search">
+                    <button class="btn search_design">
+                        <li><a class="header_menu_item link_menu_underline1 header_color search_a" href="#">
+                                <i class="fa-solid fa-magnifying-glass" style="color:black"></i> Search</a>
+                        </li>
+                    </button>
+                </form>
+            </ul>
+        </div>
+
         <!-- 헤더 로고 -->
-        <div class="header_logo">
-            <!-- 로고 이미지 및 타이틀 -->
-            <h1 class="header_logo_title">
-                <img class="header_logo_img" src="./img/네잎클로버.PNG" alt="Logo">
-                <a class="header_logo_name link_underline header_color" href="#">Where Today ?</a>
-            </h1>
+        <div class="col header_col2">
+            <div class="header_logo">
+                <!-- 로고 이미지 및 타이틀 -->
+                <h1 class="header_logo_title">
+                    <img class="header_logo_img" src="./img/네잎클로버.PNG" alt="Logo">
+                    <a class="header_logo_name link_underline header_color" href="#">Where Today ?</a>
+                </h1>
+            </div>
         </div>
 
         <!-- 메뉴 리스트 -->
-        <ul class="header_menu_li header_menu_right">
-            <!-- 메뉴 누르면 해당 페이지로 연결하는 링크 
+        <div class="col header_col3">
+            <ul class="header_menu_li header_menu_right">
+                <!-- 메뉴 누르면 해당 페이지로 연결하는 링크 
             (아직 페이지 만들지 않아 본 페이지 이동 링크 설정) -->
-            <li><a class="header_menu_item link_menu_underline header_color" href="#">
-                    <i class="fa-solid fa-heart" style="color: black;"></i> Wish</a></li>
-            <li><a class="header_menu_item link_menu_underline header_color" href="#">
-                    <i class="fa-solid fa-user" style="color: black;"></i> Login</a></li>
-        </ul>
+                <li><a class="header_menu_item link_menu_underline header_color" href="#">
+                        <i class="fa-solid fa-heart" style="color: black;"></i> Wish</a></li>
+                <li><a class="header_menu_item link_menu_underline header_color" href="#">
+                        <i class="fa-solid fa-user" style="color: black;"></i> Login</a></li>
+            </ul>
+        </div>
 
         <!-- 토글 버튼 -->
         <a href="#" class="header_toggleBtn">
@@ -278,7 +286,7 @@
                 <div class="card_img_title card_img_size">
                     <p><br><br>관련 정보<br>자세히 보기</p>
                 </div>
-                    <img src="./img/메인배경3.JPG" class="card-img-top card_img_size" alt="...">
+                <img src="./img/메인배경3.JPG" class="card-img-top card_img_size" alt="...">
                 <div class="card h-100 card_comment">
                     <div class="card-body">
                         <h6 class="card-title card_title">코엑스 아쿠아리움</h6>
