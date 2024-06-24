@@ -12,9 +12,10 @@ ul {
 
 .container {
     position: relative;
-    top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 20px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-bottom: 20px;
 }
 
 .header {
@@ -206,8 +207,6 @@ ul {
 
 /* 메인 컨테이너 관련 내용 */
 .main_container {
-    margin-left: 0;
-    margin-right: 20px;
     padding-left: 0;
     padding-right: 10px;
     width: 80vw;
@@ -235,7 +234,7 @@ ul {
 
 .main_text {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     width: 100%;
     height: 300px;
@@ -421,13 +420,13 @@ ul {
     border-radius: 10px;
     /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
     padding: 1px;
-    width: 120px;
+    width: 18%;
     border: 2px solid lightgray;
-    height: 170px;
+    height: 130px;
 }
 
 .menu_icon_design {
-    font-size: 90px;
+    font-size: 70px;
     margin: 15px 0;
     color: black;
     transition: all 0.5s;
@@ -468,14 +467,14 @@ ul {
 }
 
 .footer_info_table {
-    height: 70px;
+    height: 60px;
     margin-top: 2px;
     margin-bottom: 2px;
     width: 700px;
 }
 
 .footer_info_table_col {
-    height: 60px;
+    height: 55px;
     padding-top: 4px;
     padding-bottom: 4px;
     border-right: 1px solid rgb(180, 178, 178);
@@ -485,6 +484,8 @@ ul {
     text-align: left;
     display: flex;
     justify-content: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footer_info_design {
@@ -508,4 +509,73 @@ ul {
     align-items: center;
     text-decoration: none;
     color: gray;
+}
+
+.card_container {
+    width: 100vw;
+    background: #f0f1f5;
+    padding: 50px;
+    height: 40vw;
+    margin-bottom: 3vw;
+}
+
+.card_array {
+    justify-content: space-between;
+    margin: 0 2vw;
+    gap: 3vw;
+}
+
+.card_size {
+    padding: 0;
+    width: 13vw;
+    height: 13vw;
+    position: relative;
+}
+
+.card_img_size {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.card_comment {
+    margin-top: 1vw;
+}
+
+.card_title {
+    padding: 0 0 0.5vw 0;
+    margin: 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.card_text {
+    padding: 0.5vw 0;
+    margin: 0;
+    font-size: 13px;
+}
+
+.card_link_design {
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+}
+
+/* 오버레이 */
+.card_img_title {
+    position: absolute;
+    border-radius: 100%;
+    transition: all 0.8s;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    background: rgb(148, 147, 147);
+    opacity: 0;
+    align-items: center;
+}
+
+.card_img_title:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
