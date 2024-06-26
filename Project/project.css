@@ -8,6 +8,7 @@ body {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 .container {
@@ -557,18 +558,21 @@ ul {
     padding: 0 0 0.5vw 0;
     margin: 0;
     border-bottom: 1px solid lightgray;
+    position: relative;
 }
 
 .card_text {
     padding: 0.5vw 0;
     margin: 0;
-    font-size: 13px;
+    font-size: 80%;
+    position: relative;
 }
 
 .card_link_design {
     text-align: center;
     text-decoration: none;
     color: gray;
+    position: relative;
 }
 
 /* 오버레이 */
@@ -588,4 +592,74 @@ ul {
 .card_img_title:hover {
     opacity: 0.8;
     cursor: pointer;
+}
+
+/* 게시글 post_container */
+.post_container {
+    position: relative;
+    padding-top: 20px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-bottom: 20px;
+}
+
+.post_search_list {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    border-bottom: 2px solid black;
+    background: #f0f1f5;
+    padding: 15px 40px;
+    align-items: center;
+}
+
+.search_link_design {
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+    position: relative;
+}
+
+.post_card {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.post_card_content {
+    padding: 10px;
+}
+
+.post_card_imgdiv {
+    padding-right: 10px;
+}
+
+.post_card_img {
+    width: 100%;
+    height: 70%;
+}
+
+.card_body {
+    padding: 0;
+}
+
+.post_card_text {
+    margin: 0;
+}
+
+.post_itembox {
+    width: 100%;
+    border: 1px solid #e8e8e8;
+    display: flex;
+    padding: 10px;
+}
+
+.item_list {   
+    display: flex;
+    flex-direction: column;
+}
+
+.item_icon {
+    font-size: 20px;
 }
