@@ -608,7 +608,7 @@ ul {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid gray;
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
     background: #f0f1f5;
     padding: 15px 40px;
     align-items: center;
@@ -638,7 +638,11 @@ ul {
 
 .post_card_img {
     width: 100%;
-    height: 70%;
+    height: 80%;
+}
+
+.post_btn {
+    margin-bottom: 10px;
 }
 
 .card_body {
